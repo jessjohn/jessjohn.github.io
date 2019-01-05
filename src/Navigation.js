@@ -20,11 +20,15 @@ export default class Navigation extends Component {
                         Home
                     </Menu.Item>
                     <Menu.Item as='a' onClick={() => pageChange('resume')}>
-                        <Icon name='file outline'/>
+                        <Icon name='file alternate outline'/>
                         Resumé
                     </Menu.Item>
+                    <Menu.Item as='a' onClick={() => pageChange('projects')}>
+                        <Icon name='boxes'/>
+                        Projects
+                    </Menu.Item>
                     <Menu.Item as='a' onClick={() => pageChange('about')}>
-                        <Icon name='user'/>
+                        <Icon name='user outline'/>
                         About Me
                     </Menu.Item>
                     <Menu.Item as='a' href='https://github.com/jessjohn' target='_blank'>

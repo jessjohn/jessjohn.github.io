@@ -1,11 +1,11 @@
+import {Container, Divider, Header} from "semantic-ui-react";
 import React, {Component} from "react";
-import {Container, Header, Divider} from "semantic-ui-react";
 
-export default class Home extends Component {
+export default class Projects extends Component {
     render() {
         return (
             <Container textAlign='justified'>
-                <Header as='h1'>Home</Header>
+                <Header as='h1'>Projects</Header>
                 <Divider/>
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
@@ -23,3 +23,4 @@ export default class Home extends Component {
         );
     }
 }
+

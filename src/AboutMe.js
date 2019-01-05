@@ -1,11 +1,12 @@
-import {Container, Header} from "semantic-ui-react";
+import {Container, Divider, Header} from "semantic-ui-react";
 import React, {Component} from "react";
 
 export default class AboutMe extends Component {
     render() {
         return (
-            <Container text>
-                <Header as='h2'>About Me</Header>
+            <Container textAlign='justified'>
+                <Header as='h1'>About Me</Header>
+                <Divider/>
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                     Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
