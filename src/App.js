@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import AboutMe from "./AboutMe";
-import Home from './Home';
-import Navigation from './Navigation';
-import Projects from './Projects';
-import Resume from './Resume';
+import AboutMe from "./pages/AboutMe";
+import Home from './pages/Home';
+import Navigation from './pages/Navigation';
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
 import './App.less';
 import 'semantic-ui-css/semantic.min.css';
 
 class App extends Component {
-    state = {currentPage: 'resume'};
+    state = {currentPage: 'projects'};
 
     pageChange = page => this.setState({currentPage: page});
 
@@ -18,7 +18,12 @@ class App extends Component {
         return (
             <div>
                 <Navigation pageChange={this.pageChange}/>
-                <div style={{marginLeft: 150 + marginBuffer, marginRight: marginBuffer, marginTop: marginBuffer, marginBottom: marginBuffer}}>
+                <div style={{
+                    marginLeft: 150 + marginBuffer,
+                    marginRight: marginBuffer,
+                    marginTop: marginBuffer,
+                    marginBottom: marginBuffer
+                }}>
                     {currentPage === 'home' ? <Home/> : null}
                     {currentPage === 'about' ? <AboutMe/> : null}
                     {currentPage === 'resume' ? <Resume/> : null}

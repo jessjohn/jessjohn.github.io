@@ -21,7 +21,7 @@ export default class Navigation extends Component {
                     </Menu.Item>
                     <Menu.Item as='a' onClick={() => pageChange('resume')}>
                         <Icon name='file alternate outline'/>
-                        Resumé
+                        CV
                     </Menu.Item>
                     <Menu.Item as='a' onClick={() => pageChange('projects')}>
                         <Icon name='boxes'/>

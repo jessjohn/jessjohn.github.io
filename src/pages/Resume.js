@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Grid, Header, Image, Label, List, Segment, Divider} from 'semantic-ui-react'
+import {Divider, Grid, Header, Image, Label, List, Segment} from 'semantic-ui-react'
 
 export default class Resume extends Component {
     render() {
@@ -9,7 +9,7 @@ export default class Resume extends Component {
         const tagMarginStyle = {margin: 5};
         return (
             <Segment.Inline>
-                <Header as='h1'>Resumé</Header>
+                <Header as='h1'>CV</Header>
                 <Segment>
                     <Header as='h2'>Work Experience</Header>
                     <Divider/>
@@ -22,7 +22,8 @@ export default class Resume extends Component {
                                     index management tools in <b>Java</b> and <b>Python</b>. Also writing <b>REST and
                                     CRUD APIs</b> which act at a high level to manipulate different underlying <b>SQL
                                     and NoSQL</b> databases as well as handle authentication and various proxy services.
-                                    Worked with Apache's <b>Storm</b> and <b>Kafka</b> to manage a rules engine and notification
+                                    Worked with Apache's <b>Storm</b> and <b>Kafka</b> to manage a rules engine and
+                                    notification
                                     system that users can customize to work with the core product. Assisted the Customer
                                     Solutions team by providing support on phone calls, and will be
                                     traveling to a customer site to help with an on-site upgrade and installation.
@@ -52,11 +53,13 @@ export default class Resume extends Component {
                                 <p>
                                     Worked at <b>Interset</b> as a Software Engineer on the <b>UX team</b>. Used <b>ES6+
                                     JavaScript</b> to develop and maintain a <b>React SPA</b> dedicated to revealing
-                                    anomalous behaviour within an entity base. Used <b>d3</b> to build graphs and diagrams
+                                    anomalous behaviour within an entity base. Used <b>d3</b> to build graphs and
+                                    diagrams
                                     which
                                     represent both baselines and unexpected activity, and used <b>Less</b> to style
                                     components.
-                                    Was solely responsible for converting statement from <b>Redux to MobX</b>, and helped
+                                    Was solely responsible for converting statement from <b>Redux to MobX</b>, and
+                                    helped
                                     with the
                                     initial transition from <b>Angular to React</b>.
                                 </p>
@@ -87,7 +90,8 @@ export default class Resume extends Component {
                                     visualization to help users manipulate and gain actionable insight from
                                     <b>Big Data</b> sets. Was the primary developer on an analytics front end for time
                                     based data in a geo-spatial context. Used <b>Clojure</b> to build an asynchronous
-                                    event framework for client-to-server as well as server-to-client <b>websocket</b> communication
+                                    event framework for client-to-server as well as
+                                    server-to-client <b>websocket</b> communication
                                     in support of real-time visualizations.
                                 </p>
                             </Grid.Column>
@@ -145,8 +149,10 @@ export default class Resume extends Component {
                             <Grid.Column width={descriptionRowWidth}>
                                 <p>
                                     Received a <b>Bachelor of Computer Science with Honours</b> in the Network Computing
-                                    stream and a minor in <b>Philosophy</b> from Carleton University. While studying here I
-                                    learned the core concepts associated with OOP and functional programming languages, a taste for algorithms,
+                                    stream and a minor in <b>Philosophy</b> from Carleton University. While studying
+                                    here I
+                                    learned the core concepts associated with OOP and functional programming languages,
+                                    a taste for algorithms,
                                     and developed the techniques needed to learn new skills.
                                 </p>
                             </Grid.Column>
@@ -170,15 +176,17 @@ export default class Resume extends Component {
                         <Grid.Row>
                             <Grid.Column width={descriptionRowWidth}>
                                 <p>
-                                    Attended <b>Loyalist College</b> to study <b>Radio Broadcasting</b>. I specialized in audio
+                                    Attended <b>Loyalist College</b> to study <b>Radio Broadcasting</b>. I specialized
+                                    in audio
                                     production and commercial writing. I learned a lot about public speaking and
                                     the importance of communication between different teams to enable a radio station
                                     to operate smoothly.
                                 </p>
                             </Grid.Column>
                             <Grid.Column width={imageRowWidth} textAlign='center'>
-                                <Image src='https://www.collegesinstitutes.ca/wp-content/uploads/2015/11/member_logo_ON_Loyalist_College.jpeg'
-                                       size='small' centered/>
+                                <Image
+                                    src='https://www.collegesinstitutes.ca/wp-content/uploads/2015/11/member_logo_ON_Loyalist_College.jpeg'
+                                    size='small' centered/>
                                 <p>Carleton University</p>
                                 <p>September 2012 - August 2016</p>
                             </Grid.Column>
