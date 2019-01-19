@@ -1,4 +1,4 @@
-import {Container, Divider, Header} from "semantic-ui-react";
+import {Container, Divider, Header, Message, Segment} from "semantic-ui-react";
 import React, {Component} from "react";
 
 export default class AboutMe extends Component {
@@ -7,18 +7,31 @@ export default class AboutMe extends Component {
             <Container textAlign='justified'>
                 <Header as='h1'>About Me</Header>
                 <Divider/>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                    consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                    link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-                    vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-                    enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla
-                    ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-                    Curabitur ullamcorper ultricies nisi.
-                </p>
+                <Segment textAlign='center' compact style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                    <img src={process.env.PUBLIC_URL + "/me.jpg"} alt="me" width={400}/>
+                    <p>Hi, I'm Jess.</p>
+                </Segment>
+
+                <Message color='teal'>
+                    What are you currently doing (in regard to your career)
+                    I'm currently working as a full time software engineer at an analytics company in Ottawa, Canada.
+                    How did you get there?
+
+                    How does your background make you unique?
+                </Message>
+                <Message color='teal'>
+                    In terms of the work you do, what aspects are you most passionate about and why?
+                </Message>
+                <Message color='teal'>
+                    What do you consider some of your biggest professional and personal accomplishments? How did your
+                    attributes contribute to those accomplishments? Be as specific as you can.
+                </Message>
+                <Message color='teal'>
+                    <Message.Header></Message.Header>
+                    What are you looking for right now? If you’re job seeking, considering a career change or looking to
+                    take on projects or gigs, mention it in your statement. (Include your email address in the last
+                    sentence, so it’s easy to get in touch with you.)
+                </Message>
             </Container>
         );
     }

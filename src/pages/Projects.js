@@ -1,9 +1,11 @@
 import {Accordion, Header, Icon, Segment} from "semantic-ui-react";
 import React, {Component} from "react";
 import LinearRegression from "../sketches/LinearRegression";
+import MouseAndCheese from "../sketches/MouseAndCheese";
+import XOR from "../sketches/XOR";
 
 export default class Projects extends Component {
-    state = {activeIndex: 0};
+    state = {activeIndex: 1};
 
     handleClick = (e, titleProps) => {
         const {index} = titleProps;
@@ -11,7 +13,7 @@ export default class Projects extends Component {
         const newIndex = activeIndex === index ? -1 : index;
 
         this.setState({activeIndex: newIndex})
-    }
+    };
 
     render() {
         const {activeIndex} = this.state;
@@ -25,10 +27,6 @@ export default class Projects extends Component {
                         Linear Regression
                     </Accordion.Title>
                     <Accordion.Content active={activeIndex === 0}>
-                        <p>Using TensorFlow.js and p5 + React, this example shows a linear regression. Click the canvas to add
-                            points and watch the line attempt a best fit. The learning rate is purposefully slow here
-                            for demo purposes.
-                        </p>
                         <LinearRegression/>
                     </Accordion.Content>
 
@@ -37,8 +35,7 @@ export default class Projects extends Component {
                         Mouse and Cheese
                     </Accordion.Title>
                     <Accordion.Content active={activeIndex === 1}>
-                        <p>Blurb about what this is and why it's being demoed.</p>
-                        <div style={{border: '1px black solid', height: 350}}>Processing container here</div>
+                        <MouseAndCheese/>
                     </Accordion.Content>
 
                     <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
@@ -46,8 +43,7 @@ export default class Projects extends Component {
                         XOR
                     </Accordion.Title>
                     <Accordion.Content active={activeIndex === 2}>
-                        <p>Blurb about what this is and why it's being demoed.</p>
-                        <div style={{border: '1px black solid', height: 350}}>Processing container here</div>
+                        <XOR/>
                     </Accordion.Content>
                 </Accordion>
             </Segment.Inline>

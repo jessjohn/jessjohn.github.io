@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import AboutMe from "./pages/AboutMe";
-import Home from './pages/Home';
 import Navigation from './pages/Navigation';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
@@ -16,7 +15,7 @@ class App extends Component {
         const {currentPage} = this.state;
         const marginBuffer = 20;
         return (
-            <div>
+            <div className="main-content">
                 <Navigation pageChange={this.pageChange}/>
                 <div style={{
                     marginLeft: 150 + marginBuffer,
@@ -24,7 +23,6 @@ class App extends Component {
                     marginTop: marginBuffer,
                     marginBottom: marginBuffer
                 }}>
-                    {currentPage === 'home' ? <Home/> : null}
                     {currentPage === 'about' ? <AboutMe/> : null}
                     {currentPage === 'resume' ? <Resume/> : null}
                     {currentPage === 'projects' ? <Projects/> : null}
