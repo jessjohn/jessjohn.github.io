@@ -7,7 +7,7 @@ import './App.less';
 import 'semantic-ui-css/semantic.min.css';
 
 class App extends Component {
-    state = {currentPage: 'projects'};
+    state = {currentPage: 'about'};
 
     pageChange = page => this.setState({currentPage: page});
 

@@ -63,8 +63,8 @@ function linearRegressionP5(p5) {
         return xTensor.mul(m).add(b);
     };
 
-    const loss = (pred, labels) => {
-        return pred.sub(labels).square().mean();
+    const loss = (prediction, yDot) => {
+        return prediction.sub(yDot).square().mean();
     };
 
     p5.setup = () => {

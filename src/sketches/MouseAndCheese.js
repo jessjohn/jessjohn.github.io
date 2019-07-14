@@ -14,9 +14,9 @@ export default class MouseAndCheese extends Component {
                 <p>
                     Using TensorFlow.js, p5, and React, this example shows a mouse trying to get some cheese. The
                     cheese is placed wherever you click and the mouse will try to get it by using some ML magic. The
-                    values for what the mouse's current guess at the X and Y position of the cheese are shown on the
+                    values for what the mouse's current guess at the X and Y position of the cheese is are shown on the
                     canvas to prove that the mouse is <i>learning</i>, rather than just being animated towards the given
-                    X and Y coordinates. :)
+                    X and Y coordinates.
                 </p>
                 <P5Interface canvasId='mouse-and-cheese' p5Function={mouseAndCheeseP5}/>
             </Segment>
@@ -31,8 +31,9 @@ function mouseAndCheeseP5(p5) {
     let cheeseX, cheeseY, cheeseImg;
     let mouseX, mouseY, mouseImg;
 
-    const predict = x => {
-
+    const predict = () => {
+        mouseX = tf.variable(tf.scalar(p5.random(p5.width)));
+        mouseY = tf.variable(tf.scalar(p5.random(p5.height)));
     };
 
     p5.updateProps = newProps => {
@@ -58,8 +59,8 @@ function mouseAndCheeseP5(p5) {
     };
 
     p5.mousePressed = () => {
+        // make sure the point is inside the canvas
         if (p5.mouseX > 0 && p5.mouseX < p5.width && p5.mouseY > 0 && p5.mouseY < p5.height) {
-            // make sure the point is inside the canvas
             p5.clear();
             cheeseX = p5.mouseX;
             cheeseY = p5.mouseY;
@@ -71,5 +72,18 @@ function mouseAndCheeseP5(p5) {
         if (cheeseX && cheeseY) {
             p5.image(cheeseImg, cheeseX, cheeseY, 40, 40);
         }
+
+        // ALGORITHM VERSION, RECURSION
+        // 1) init x/y with random int inside the canvas for a guess
+        // 2) if(guessX == cheeseX && guessY == cheeseY) :) :)
+        //    else
+        //    if(cheeseX - guessX < 0) mouseX += 1
+        //    else mouseX -= 1
+        //    if(cheeseY - guessY < 0) mouseY += 1
+        //    else mouseY -=1
+        // 3) repeat 2) until 1) matches
+
+        // ML VERSION
+        // ?? hmmm
     };
 }

@@ -23,11 +23,10 @@ export default class Resume extends Component {
                                     CRUD APIs</b> which act at a high level to manipulate different underlying <b>SQL
                                     and NoSQL</b> databases as well as handle authentication and various proxy services.
                                     Worked with Apache's <b>Storm</b> and <b>Kafka</b> to manage a rules engine and
-                                    notification
-                                    system that users can customize to work with the core product. Assisted the Customer
-                                    Solutions team by providing support on phone calls, and will be
-                                    traveling to a customer site to help with an on-site upgrade and installation.
-                                    Wrote unit tests, integration tests, and automated tests.
+                                    notification system that users can customize to interact with the core product.
+                                    Assisted the Customer Solutions team by providing support on phone calls, and
+                                    traveled to a customer site to help with an on-site upgrade and installation.
+                                    Write unit tests, integration tests, and automated tests.
                                 </p>
                             </Grid.Column>
                             <Grid.Column width={imageRowWidth} textAlign='center'>
@@ -187,8 +186,8 @@ export default class Resume extends Component {
                                 <Image
                                     src='https://www.collegesinstitutes.ca/wp-content/uploads/2015/11/member_logo_ON_Loyalist_College.jpeg'
                                     size='small' centered/>
-                                <p>Carleton University</p>
-                                <p>September 2012 - August 2016</p>
+                                <p>Loyalist College</p>
+                                <p>September 2008 - April 2009</p>
                             </Grid.Column>
                             <Grid.Column width={tagsRowWidth}>
                                 <List bulleted>
