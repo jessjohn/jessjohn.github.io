@@ -17,11 +17,37 @@ export default class Resume extends Component {
                         <Grid.Row>
                             <Grid.Column width={descriptionRowWidth}>
                                 <p>
-                                    Currently working at <b>Interset</b> as a Software Engineer on the <b>Search &
-                                    Discovery</b> team to manage <b>Elasticsearch</b> clusters by writing queries and
-                                    index management tools in <b>Java</b> and <b>Python</b>. Also writing <b>REST and
-                                    CRUD APIs</b> which act at a high level to manipulate different underlying <b>SQL
-                                    and NoSQL</b> databases as well as handle authentication and various proxy services.
+                                    Currently working at <b>Interset</b> as a Team Lead for the <b>Search & Discovery</b> team to act as the subject matter expert for <b>Elasticsearch</b> clusters and <b>APIs</b> which
+                                    support them.
+                                    Working closely with the Director of Development and other team leads to <b>plan and prioritize</b> work items for product releases.
+                                    Engaging directly with customers on a weekly basis helping to troubleshoot issues relevant to the team.
+                                    Training and overseeing co-op students by helping them to set their goals and align those with the team's tasks.
+                                </p>
+                            </Grid.Column>
+                            <Grid.Column width={imageRowWidth} textAlign='center'>
+                                <Image src='https://interset.com/wp-content/uploads/2018/02/Interset_horizontal_RGB.png'
+                                       size='small' centered/>
+                                <p>Interset</p>
+                                <p>June 2019 - Present</p>
+                            </Grid.Column>
+                            <Grid.Column width={tagsRowWidth}>
+                                <List bulleted>
+                                    <Label style={tagMarginStyle}>Java</Label>
+                                    <Label style={tagMarginStyle}>Elasticsearch</Label>
+                                    <Label style={tagMarginStyle}>Interviews</Label>
+                                    <Label style={tagMarginStyle}>Planning</Label>
+                                    <Label style={tagMarginStyle}>Customer Support</Label>
+                                </List>
+                            </Grid.Column>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Column width={descriptionRowWidth}>
+                                <p>
+                                    Worked at <b>Interset</b> as a Software Engineer on the <b>Search & Discovery</b>
+                                    team to manage <b>Elasticsearch</b> clusters by writing queries and index management
+                                    tools in <b>Java</b> and <b>Python</b>. Also writing <b>REST and CRUD APIs</b> which
+                                    act at a high level to manipulate different underlying <b>SQL and NoSQL</b>
+                                    databases as well as handle authentication and various proxy services.
                                     Worked with Apache's <b>Storm</b> and <b>Kafka</b> to manage a rules engine and
                                     notification system that users can customize to interact with the core product.
                                     Assisted the Customer Solutions team by providing support on phone calls, and
@@ -52,15 +78,13 @@ export default class Resume extends Component {
                                 <p>
                                     Worked at <b>Interset</b> as a Software Engineer on the <b>UX team</b>. Used <b>ES6+
                                     JavaScript</b> to develop and maintain a <b>React SPA</b> dedicated to revealing
-                                    anomalous behaviour within an entity base. Used <b>d3</b> to build graphs and
-                                    diagrams
-                                    which
-                                    represent both baselines and unexpected activity, and used <b>Less</b> to style
-                                    components.
+                                    anomalous behaviour within an entity base.
                                     Was solely responsible for converting statement from <b>Redux to MobX</b>, and
-                                    helped
-                                    with the
-                                    initial transition from <b>Angular to React</b>.
+                                    helped with the initial transition from <b>Angular to React</b>.
+                                    Used <b>d3</b> to build graphs and diagrams which represent both baselines and
+                                    unexpected activity, and used <b>Less</b> to style components.
+                                    Designed and implemented a UI to guide end users through the process of creating
+                                    rules which would be consumed by a rules engine.
                                 </p>
                             </Grid.Column>
                             <Grid.Column width={imageRowWidth} textAlign='center'>
