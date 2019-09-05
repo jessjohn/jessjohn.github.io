@@ -21,7 +21,7 @@ export default class AboutMe extends Component {
                     snowboarding when there's snow and biking when there isn't.
                 </Message>
                 <Message>
-                    <Message.Header>How did Jess get there?</Message.Header>
+                    <Message.Header>How did Jess get here?</Message.Header>
                     After studying radio broadcasting in college, I had gotten a taste for higher learning and wanted
                     to continue my educational path. Someone told me I was "very logical" and that I should give
                     programming a try. I enrolled in my first programming class in 2012, and graduated with a BCS
@@ -38,7 +38,7 @@ export default class AboutMe extends Component {
                     solved. Looking back, I can see now that learning to program was a no-brainer for me. What I
                     learned while being a radio DJ still serves me today - communication, creativity, and not being afraid
                     to be the only voice in a room are all skills that I've used throughout my programming career. Combine
-                    all that with a no-quit-until-its-done attitude, and you've got Jess.
+                    all that with a no-quit-until-it's-done attitude, and you've got Jess.
                 </Message>
                 <Message>
                     <Message.Header>What is Jess passionate about?</Message.Header>
