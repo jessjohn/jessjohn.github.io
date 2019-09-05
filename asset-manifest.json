@@ -9,9 +9,9 @@
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/App.less": "/static/media/App.0f413598.less",
   "static/media/semantic.min.css": "/static/media/flags.9c74e172.png",
-  "static/css/1.75dbaa30.chunk.css.map": "/static/css/1.75dbaa30.chunk.css.map",
   "static/css/main.8c625e45.chunk.css.map": "/static/css/main.8c625e45.chunk.css.map",
+  "static/css/1.75dbaa30.chunk.css.map": "/static/css/1.75dbaa30.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.2ecb138cbf1eaa8363368c453ff2076c.js": "/precache-manifest.2ecb138cbf1eaa8363368c453ff2076c.js",
+  "precache-manifest.d5d9d82ac953436e8657b0d221a187a2.js": "/precache-manifest.d5d9d82ac953436e8657b0d221a187a2.js",
   "service-worker.js": "/service-worker.js"
 }
