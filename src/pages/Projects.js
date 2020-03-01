@@ -5,7 +5,7 @@ import MouseAndCheese from "../sketches/MouseAndCheese";
 import XOR from "../sketches/XOR";
 
 export default class Projects extends Component {
-    state = {activeIndex: 1};
+    state = {activeIndex: 0};
 
     handleClick = (e, titleProps) => {
         const {index} = titleProps;
@@ -32,7 +32,7 @@ export default class Projects extends Component {
 
                     <Accordion.Title active={activeIndex === 1} index={1} onClick={this.handleClick}>
                         <Icon name='dropdown'/>
-                        Mouse and Cheese
+                        Mouse and Cheese (WIP)
                     </Accordion.Title>
                     <Accordion.Content active={activeIndex === 1}>
                         <MouseAndCheese/>
@@ -40,7 +40,7 @@ export default class Projects extends Component {
 
                     <Accordion.Title active={activeIndex === 2} index={2} onClick={this.handleClick}>
                         <Icon name='dropdown'/>
-                        XOR
+                        XOR (WIP)
                     </Accordion.Title>
                     <Accordion.Content active={activeIndex === 2}>
                         <XOR/>

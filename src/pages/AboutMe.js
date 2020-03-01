@@ -13,12 +13,11 @@ export default class AboutMe extends Component {
                 </Segment>
                 <Message>
                     <Message.Header>What is Jess currently doing?</Message.Header>
-                    I'm currently working as a full time software engineer at an analytics and machine
-                    learning company in Ottawa, Canada. My day job is to write Java that supports Elasticsearch
-                    clusters, create REST APIs, and to solve high level problems. In my spare time, I'm learning about
-                    ML+AI by playing with TensorFlow.js. I also volunteer at the Ottawa Tool Library, and with Ladies
-                    Learning Code. My hobbies are watching TV and movies, playing video games, cooking,
-                    snowboarding when there's snow and biking when there isn't.
+                    I'm currently working as a fullstack software developer at a company in Ottawa, Canada.
+                    My day job is to write Python code to support Elasticsearch clusters, maintain Django REST APIs,
+                    improve Angular code, and to solve high level problems. In my spare time, I'm learning everything
+                    I can about the science of cooking. I'm also very interested in taking on software challenges at the
+                    community level, please contact me if you have one!
                 </Message>
                 <Message>
                     <Message.Header>How did Jess get here?</Message.Header>
@@ -28,12 +27,12 @@ export default class AboutMe extends Component {
                     in 2016. During university I worked on developing UIs and APIs at a company called CENX, which
                     lead me down the path of Big Data and analytics. In 2016, just before graduating, I began working
                     at Interset doing similar UI and API development but at a much larger scale (from millions of
-                    events per month, to billions per week!). Analytics and machine learning play key roles in my
-                    current job, and I'm eager to continue honing my skills in these areas.
+                    events per month, to billions per week!). Working at Interset gave me a taste for the Elastic stack
+                    and all the wonderful capabilities it's software enables a developer to achieve.
                 </Message>
                 <Message>
                     <Message.Header>What does Jess bring to the table?</Message.Header>
-                    I've never enjoyed feeling helpless or useless when problems arise. Even with the smallest problems,
+                    I've never enjoyed feeling helpless when problems arise. Even with the smallest problems,
                     like a drawer that sticks or a border off by 1 pixel, I just <i>feel</i> better after a problem is
                     solved. Looking back, I can see now that learning to program was a no-brainer for me. What I
                     learned while being a radio DJ still serves me today - communication, creativity, and not being afraid

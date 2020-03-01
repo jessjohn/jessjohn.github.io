@@ -17,7 +17,37 @@ export default class Resume extends Component {
                         <Grid.Row>
                             <Grid.Column width={descriptionRowWidth}>
                                 <p>
-                                    Currently working at <b>Interset</b> as a Team Lead for the <b>Search & Discovery</b> team to act as the subject matter expert for <b>Elasticsearch</b> clusters and <b>APIs</b> which
+                                    Currently working at <b>Wikileaf</b> as a fullstack Software Developer building and
+                                    maintaining the website wikileaf.com. Using <b>Angular</b> and <b>TypeScript</b> to build
+                                    components for the website, and using <b>Django</b> with <b>Python</b> to build the REST API.
+                                    Rebuilt the website's search functionality to use <b>Elasticsearch</b>, and created
+                                    internal event tracking using an <b>Elastic stack</b> to help provide insights to
+                                    cannabis dispensary owners on the visibility their audience has through ad
+                                    placements on the website. Working with <b>Kubernetes</b> deployments to manage a
+                                    distributed platform.
+                                </p>
+                            </Grid.Column>
+                            <Grid.Column width={imageRowWidth} textAlign='center'>
+                                <Image src='https://www.wikileaf.com/assets/img/logo.svg'
+                                       size='small' centered/>
+                                <p>Wikileaf</p>
+                                <p>October 2019 - Present</p>
+                            </Grid.Column>
+                            <Grid.Column width={tagsRowWidth}>
+                                <List bulleted>
+                                    <Label style={tagMarginStyle}>Elasticsearch</Label>
+                                    <Label style={tagMarginStyle}>Python</Label>
+                                    <Label style={tagMarginStyle}>Django</Label>
+                                    <Label style={tagMarginStyle}>Kubernetes</Label>
+                                    <Label style={tagMarginStyle}>Angular</Label>
+                                    <Label style={tagMarginStyle}>TypeScript</Label>
+                                </List>
+                            </Grid.Column>
+                        </Grid.Row>
+                        <Grid.Row>
+                            <Grid.Column width={descriptionRowWidth}>
+                                <p>
+                                    Worked at <b>Interset</b> as a Team Lead for the <b>Search & Discovery</b> team to act as the subject matter expert for <b>Elasticsearch</b> clusters and <b>APIs</b> which
                                     support them.
                                     Working closely with the Director of Development and other team leads to <b>plan and prioritize</b> work items for product releases.
                                     Engaging directly with customers on a weekly basis helping to troubleshoot issues relevant to the team.
@@ -28,7 +58,7 @@ export default class Resume extends Component {
                                 <Image src='https://interset.com/wp-content/uploads/2018/02/Interset_horizontal_RGB.png'
                                        size='small' centered/>
                                 <p>Interset</p>
-                                <p>June 2019 - Present</p>
+                                <p>June 2019 - October 2019</p>
                             </Grid.Column>
                             <Grid.Column width={tagsRowWidth}>
                                 <List bulleted>
@@ -79,8 +109,8 @@ export default class Resume extends Component {
                                     Worked at <b>Interset</b> as a Software Engineer on the <b>UX team</b>. Used <b>ES6+
                                     JavaScript</b> to develop and maintain a <b>React SPA</b> dedicated to revealing
                                     anomalous behaviour within an entity base.
-                                    Was solely responsible for converting statement from <b>Redux to MobX</b>, and
-                                    helped with the initial transition from <b>Angular to React</b>.
+                                    Was solely responsible for converting state management from <b>Redux to MobX</b>, and
+                                    was a key contributor on the transition from <b>Angular to React</b>.
                                     Used <b>d3</b> to build graphs and diagrams which represent both baselines and
                                     unexpected activity, and used <b>Less</b> to style components.
                                     Designed and implemented a UI to guide end users through the process of creating
