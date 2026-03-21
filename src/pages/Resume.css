@@ -1,0 +1,298 @@
+.resume-page {
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+.resume-hero {
+  padding: 64px 80px 56px;
+  background: var(--gradient-hero);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.resume-heading {
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: var(--white);
+}
+
+.resume-subheading {
+  font-size: 16px;
+  color: var(--gray);
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+.btn-download {
+  margin-top: 8px;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  background: var(--yellow);
+  color: #1a0a2a;
+  transition: opacity 0.2s, transform 0.15s;
+  cursor: pointer;
+}
+
+.btn-download:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.resume-body {
+  padding: 56px 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resume-section-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Experience ── */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.experience-list::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 14px;
+  bottom: 14px;
+  width: 2px;
+  background: var(--border);
+}
+
+.experience-item,
+.education-card {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.experience-item:last-child {
+  padding-bottom: 0;
+}
+
+.experience-dot {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border-radius: 50%;
+  background: var(--pink);
+  margin-top: 4px;
+  box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.experience-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.experience-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.experience-period {
+  font-size: 13px;
+  color: var(--gray);
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.experience-company {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.experience-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--gray);
+  margin-top: 4px;
+}
+
+.experience-bullets {
+  margin-top: 8px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.experience-bullets li {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--gray);
+}
+
+/* ── Tech Stack ── */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tech-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.tech-category {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--pink);
+  margin-bottom: 14px;
+}
+
+.tech-skill-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tech-skill-list li {
+  font-size: 14px;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+.accent-pink {
+  color: var(--pink);
+}
+
+@media print {
+  @page {
+    margin: 24mm 20mm;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .navbar,
+  .resume-hero,
+  .footer {
+    display: none !important;
+  }
+
+  .resume-page {
+    padding-top: 0;
+  }
+
+  .resume-body {
+    padding: 0;
+    max-width: 100%;
+    gap: 32px;
+  }
+
+  .resume-section-title {
+    color: black;
+    border-bottom-color: #ccc;
+    font-size: 14px;
+  }
+
+  .experience-title {
+    color: black;
+    font-size: 13px;
+  }
+
+  .experience-company {
+    color: #555;
+  }
+
+  .experience-period {
+    color: #555;
+  }
+
+  .experience-bullets li,
+  .experience-desc {
+    color: #333;
+    font-size: 12px;
+  }
+
+  .experience-dot {
+    background: black;
+    box-shadow: none;
+  }
+
+  .experience-list::before {
+    background: #ccc;
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tech-card {
+    background: white;
+    border-color: #ddd;
+    break-inside: avoid;
+  }
+
+  .tech-category {
+    color: #555;
+  }
+
+  .tech-skill-list li {
+    color: black;
+    font-size: 12px;
+  }
+
+  .experience-item {
+    break-inside: avoid;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-hero,
+  .resume-body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+}
