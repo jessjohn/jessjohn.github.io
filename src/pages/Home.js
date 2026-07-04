@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import Footer from '../components/Footer';
 import './Home.css';
 
 const traits = [
@@ -60,8 +59,8 @@ export default function Home() {
         <div className="hero-image-wrap">
           <div className="hero-image-frame">
             <img
-              src="/coding.svg"
-              alt="Jess coding"
+              src="/ai-jess.png"
+              alt="Jess smiling"
               className="hero-image"
             />
           </div>
@@ -74,9 +73,11 @@ export default function Home() {
         </h2>
         <p className="about-intro">
           If you're looking for someone who will challenge assumptions, think like a product owner,
-          and still write solid, reliable code — we'll work well together. I don't just build what
-          you ask for. I help you build the right thing.
+          and still write solid, reliable code... we'll work well together.
         </p>
+        <h3 className="about-tagline">
+          I don't just build what you ask for. <span className="accent-pink">I help you build the right thing.</span>
+        </h3>
         <div className="about-cards">
           {services.map(({ title, desc }) => (
             <div key={title} className="about-card">
@@ -87,7 +88,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

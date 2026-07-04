@@ -1,24 +1,23 @@
-import Footer from '../components/Footer';
 import './Projects.css';
 
 const projects = [
   {
     title: 'Stretch Atlas',
     desc: 'A mobile app featuring an interactive anatomical body map that guides athletes and bodybuilders through targeted stretches based on what\'s sore. Tap a muscle group, get the stretch.',
-    image: '/stretch.svg',
-    tags: ['React Native', 'Mobile', 'iOS'],
+    image: '/stretch_atlas.png',
+    tags: ['React Native', 'Mobile', 'iOS', 'Android'],
   },
   {
-    title: 'Confidential Fitness Platform',
-    desc: 'A fitness application I built under NDA. Can\'t share the details, but it\'s a fun one.',
-    image: '/personal_trainer.svg',
-    tags: ['Under NDA', 'React Native', 'Mobile', 'iOS', 'Tablet', 'Android', 'Web', 'Stripe', 'Supabase', 'Render'],
+    title: 'Fitness Platform',
+    desc: 'A fitness application I built (under NDA). Can\'t share the details, but it\'s a good one.',
+    image: '/coaching.jpg',
+    tags: ['Under NDA', 'React Native', 'Mobile', 'iOS', 'Tablet', 'Android', 'Web', 'Stripe', 'Appwrite'],
   },
   {
     title: 'Made With Love',
     desc: 'A mobile food delivery app connecting home cooks with local food lovers. The product was built and ready... the business model just didn\'t hold up. Shelved, but still one of my favourite things I\'ve built.',
-    image: '/cooking.svg',
-    tags: ['Shelved', 'Mobile', 'iOS', 'Supabase', 'Stripe'],
+    image: '/made_with_love.jpg',
+    tags: ['Mobile', 'iOS', 'Android', 'Supabase', 'Stripe'],
   },
 ];
 
@@ -55,7 +54,6 @@ export default function Projects() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

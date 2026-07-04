@@ -1,4 +1,3 @@
-import Footer from '../components/Footer';
 import './Resume.css';
 
 const experience = [
@@ -161,7 +160,6 @@ export default function Resume() {
         </section>
       </div>
 
-      <Footer />
     </div>
   );
 }

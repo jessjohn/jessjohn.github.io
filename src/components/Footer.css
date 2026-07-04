@@ -1,10 +1,22 @@
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
   padding: 32px 40px;
   border-top: 1px solid var(--border);
   margin-top: 80px;
+}
+
+.footer-email {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--pink);
+  transition: opacity 0.2s;
+}
+
+.footer-email:hover {
+  opacity: 0.75;
 }
 
 .footer-text {

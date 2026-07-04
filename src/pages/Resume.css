@@ -1,11 +1,10 @@
 .resume-page {
-  padding-top: 60px;
   min-height: 100vh;
+  background: var(--gradient-hero);
 }
 
 .resume-hero {
   padding: 64px 80px 56px;
-  background: var(--gradient-hero);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -35,7 +34,7 @@
   font-weight: 700;
   border: none;
   background: var(--yellow);
-  color: #1a0a2a;
+  color: #0f0a08;
   transition: opacity 0.2s, transform 0.15s;
   cursor: pointer;
 }
@@ -100,7 +99,7 @@
   border-radius: 50%;
   background: var(--pink);
   margin-top: 4px;
-  box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.2);
+  box-shadow: 0 0 0 3px rgba(109, 134, 137, 0.2);
   position: relative;
   z-index: 1;
 }
@@ -286,6 +285,7 @@
 }
 
 @media (max-width: 768px) {
+
   .resume-hero,
   .resume-body {
     padding-left: 24px;
